@@ -734,3 +734,27 @@ h2 em { color:var(--rose); font-style:normal; }
     gap:8px;
   }
 }
+
+/* Custom Pickup Location Input Styling */
+.custom-pickup-block {
+  animation: fadeInDown 0.25s ease;
+}
+.custom-search-field {
+  animation: fadeInDown 0.25s ease;
+}
+.custom-pickup-block input,
+.custom-search-field input {
+  border-color: var(--rose) !important;
+  background-color: #fffaf8 !important;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

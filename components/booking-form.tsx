@@ -8,6 +8,8 @@ import { ArrowIcon, CalendarIcon, MapIcon } from "./icons";
 
 export function BookingForm() {
   const router = useRouter();
+  const [pickup, setPickup] = useState("Jaipur Airport");
+  const [customPickup, setCustomPickup] = useState("");
   const [message, setMessage] = useState("");
   const dateInput = useRef<HTMLInputElement>(null);
   const calendar = useRef<Instance | null>(null);
@@ -28,7 +30,10 @@ export function BookingForm() {
       prevArrow: "←",
     });
     calendar.current = picker;
-    return () => { picker.destroy(); calendar.current = null; };
+    return () => {
+      picker.destroy();
+      calendar.current = null;
+    };
   }, []);
 
   function submit(event: FormEvent<HTMLFormElement>) {
@@ -40,18 +45,81 @@ export function BookingForm() {
       calendar.current?.open();
       return;
     }
-    const params = new URLSearchParams({ pickup: String(form.get("pickup")), dates, car: String(form.get("carType")) });
+    const finalPickup = pickup === "Other" ? (customPickup.trim() || "Custom location") : pickup;
+    const params = new URLSearchParams({
+      pickup: finalPickup,
+      dates,
+      car: String(form.get("carType")),
+    });
     router.push(`/booking?${params.toString()}`);
   }
 
   return (
     <form className="search-card" onSubmit={submit}>
-      <div className="search-card-heading"><span>Find your drive</span><small>Live request · confirmation by our Jaipur team</small></div>
-      <label className="search-field"><span><MapIcon /> Pickup hub</span><select name="pickup" defaultValue="Jaipur Airport"><option>Jaipur Airport</option><option>Jaipur Railway Station</option><option>Vaishali Nagar</option><option>Mansarovar</option><option>Jagatpura</option><option>Sindhi Camp</option></select></label>
-      <label className="search-field"><span><CalendarIcon /> Trip dates</span><input ref={dateInput} name="dates" type="hidden" placeholder="Pickup → Return" aria-label="Pickup and return dates" /></label>
-      <label className="search-field"><span>Car preference</span><select name="carType" defaultValue="SUV"><option>Hatchback</option><option>Sedan</option><option>SUV</option><option>7-seater</option></select></label>
-      <button className="button button-primary search-submit" type="submit">Show available cars <ArrowIcon /></button>
-      {message && <p className="form-message" role="status">{message}</p>}
+      <div className="search-card-heading">
+        <span>Find your drive</span>
+        <small>Live request · confirmation by our Jaipur team</small>
+      </div>
+      <label className="search-field">
+        <span>
+          <MapIcon /> Pickup hub / Area
+        </span>
+        <select name="pickup" value={pickup} onChange={(e) => setPickup(e.target.value)}>
+          <option value="Jaipur Airport">Jaipur Airport</option>
+          <option value="Jaipur Railway Station">Jaipur Railway Station</option>
+          <option value="Vaishali Nagar">Vaishali Nagar</option>
+          <option value="Mansarovar">Mansarovar</option>
+          <option value="Jagatpura">Jagatpura</option>
+          <option value="Sindhi Camp">Sindhi Camp</option>
+          <option value="Other">Other (Enter custom location)...</option>
+        </select>
+      </label>
+
+      {pickup === "Other" && (
+        <label className="search-field custom-search-field">
+          <span>
+            <MapIcon /> Enter pickup location / address
+          </span>
+          <input
+            type="text"
+            placeholder="e.g. C-Scheme, Raja Park, Hotel name..."
+            value={customPickup}
+            onChange={(e) => setCustomPickup(e.target.value)}
+            required
+          />
+        </label>
+      )}
+
+      <label className="search-field">
+        <span>
+          <CalendarIcon /> Trip dates
+        </span>
+        <input
+          ref={dateInput}
+          name="dates"
+          type="hidden"
+          placeholder="Pickup → Return"
+          aria-label="Pickup and return dates"
+        />
+      </label>
+      <label className="search-field">
+        <span>Car preference</span>
+        <select name="carType" defaultValue="SUV">
+          <option>Hatchback</option>
+          <option>Sedan</option>
+          <option>SUV</option>
+          <option>7-seater</option>
+        </select>
+      </label>
+      <button className="button button-primary search-submit" type="submit">
+        Show available cars <ArrowIcon />
+      </button>
+      {message && (
+        <p className="form-message" role="status">
+          {message}
+        </p>
+      )}
     </form>
   );
 }
+
