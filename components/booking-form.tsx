@@ -60,35 +60,48 @@ export function BookingForm() {
         <span>Find your drive</span>
         <small>Live request · confirmation by our Jaipur team</small>
       </div>
-      <label className="search-field">
-        <span>
-          <MapIcon /> Pickup hub / Area
-        </span>
-        <select name="pickup" value={pickup} onChange={(e) => setPickup(e.target.value)}>
-          <option value="Jaipur Airport">Jaipur Airport</option>
-          <option value="Jaipur Railway Station">Jaipur Railway Station</option>
-          <option value="Vaishali Nagar">Vaishali Nagar</option>
-          <option value="Mansarovar">Mansarovar</option>
-          <option value="Jagatpura">Jagatpura</option>
-          <option value="Sindhi Camp">Sindhi Camp</option>
-          <option value="Other">Other (Enter custom location)...</option>
-        </select>
-      </label>
-
-      {pickup === "Other" && (
-        <label className="search-field custom-search-field">
+      <div className="search-field pickup-search-field">
+        <div className="search-field-title-row">
           <span>
-            <MapIcon /> Enter pickup location / address
+            <MapIcon /> {pickup === "Other" ? "Custom Location" : "Pickup hub"}
           </span>
+          {pickup === "Other" && (
+            <button
+              type="button"
+              className="search-hub-toggle"
+              onClick={() => {
+                setPickup("Jaipur Airport");
+                setCustomPickup("");
+              }}
+              title="Switch back to standard pickup hubs"
+            >
+              Choose Hub ↺
+            </button>
+          )}
+        </div>
+
+        {pickup === "Other" ? (
           <input
             type="text"
-            placeholder="e.g. C-Scheme, Raja Park, Hotel name..."
+            placeholder="e.g. C-Scheme, Raja Park, Hotel..."
             value={customPickup}
             onChange={(e) => setCustomPickup(e.target.value)}
+            autoFocus
             required
+            className="search-custom-input"
           />
-        </label>
-      )}
+        ) : (
+          <select name="pickup" value={pickup} onChange={(e) => setPickup(e.target.value)}>
+            <option value="Jaipur Airport">Jaipur Airport</option>
+            <option value="Jaipur Railway Station">Jaipur Railway Station</option>
+            <option value="Vaishali Nagar">Vaishali Nagar</option>
+            <option value="Mansarovar">Mansarovar</option>
+            <option value="Jagatpura">Jagatpura</option>
+            <option value="Sindhi Camp">Sindhi Camp</option>
+            <option value="Other">Other (Enter custom location)...</option>
+          </select>
+        )}
+      </div>
 
       <label className="search-field">
         <span>
@@ -122,4 +135,5 @@ export function BookingForm() {
     </form>
   );
 }
+
 
