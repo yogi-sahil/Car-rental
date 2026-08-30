@@ -292,13 +292,14 @@ export default function WeddingBulkBookingPage() {
           {bulkFaqs.map(([question, answer], index) => (
             <details key={index}>
               <summary>
-                <span>{question}</span>
-                <span aria-hidden="true">+</span>
+                {question}
+                <span>+</span>
               </summary>
               <p>{answer}</p>
             </details>
           ))}
         </div>
+
       </section>
 
       {/* Direct Contact Callout */}
