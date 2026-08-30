@@ -10,6 +10,7 @@ export default function manifest(): MetadataRoute.Manifest {
     background_color: "#fffdf9",
     theme_color: "#17221f",
     categories: ["travel", "automotive"],
-    icons: [{ src: "/brand/financer-mark.svg", sizes: "any", type: "image/svg+xml", purpose: "any" }],
+    icons: [{ src: "/brand/financer-mark.avif", sizes: "500x500", type: "image/avif", purpose: "any" }],
+
   };
 }
