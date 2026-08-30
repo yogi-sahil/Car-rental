@@ -6,13 +6,14 @@ import { cars } from "@/lib/data";
 
 const heroCars = cars.slice(0, 6);
 const heroCutouts: Record<string, string> = {
-  "mahindra-scorpio-n": "/images/cars/cutouts/mahindra-scorpio-n-cutout.png",
-  "mahindra-scorpio": "/images/cars/cutouts/scorpio-classic-cutout.png",
-  "mahindra-thar": "/images/cars/cutouts/thar-cutout.png",
-  "maruti-swift": "/images/cars/cutouts/swift-cutout.png",
-  "maruti-fronx": "/images/cars/cutouts/fronx-cutout.png",
-  "maruti-brezza": "/images/cars/cutouts/brezza-cutout.png",
+  "mahindra-scorpio-n": "/images/cars/cutouts/mahindra-scorpio-n-cutout.webp",
+  "mahindra-scorpio": "/images/cars/cutouts/scorpio-classic-cutout.webp",
+  "mahindra-thar": "/images/cars/cutouts/thar-cutout.webp",
+  "maruti-swift": "/images/cars/cutouts/swift-cutout.webp",
+  "maruti-fronx": "/images/cars/cutouts/fronx-cutout.webp",
+  "maruti-brezza": "/images/cars/cutouts/brezza-cutout.webp",
 };
+
 
 export function HeroCarCarousel() {
   const [active, setActive] = useState(0);

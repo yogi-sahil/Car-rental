@@ -2,7 +2,8 @@ import type { ReactNode } from "react";
 import Image from "next/image";
 
 export function PageHero({ eyebrow, title, description, image, children }: { eyebrow: string; title: string; description: string; image?: string; children?: ReactNode }) {
-  const heroImage = image ?? "/images/jaipur-road-self-drive-hero.jpg";
+  const heroImage = image ?? "/images/jaipur-road-self-drive-hero.webp";
+
 
   return (
     <section className="inner-hero">

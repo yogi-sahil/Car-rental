@@ -37,9 +37,10 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: siteUrl,
     siteName: "Financer Car Rental Jaipur",
-    images: [{ url: "/images/jaipur-road-self-drive-hero.jpg", width: 1763, height: 892, alt: "Self-drive SUV on a Jaipur road" }],
+    images: [{ url: "/images/jaipur-road-self-drive-hero.webp", width: 1763, height: 892, alt: "Self-drive SUV on a Jaipur road" }],
   },
-  twitter: { card: "summary_large_image", title: "Financer Car Rental Jaipur", description: "13 self-drive cars with 24-hour, 300-km packages in Jaipur.", images: ["/images/jaipur-road-self-drive-hero.jpg"] },
+  twitter: { card: "summary_large_image", title: "Financer Car Rental Jaipur", description: "13 self-drive cars with 24-hour, 300-km packages in Jaipur.", images: ["/images/jaipur-road-self-drive-hero.webp"] },
+
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
   manifest: "/manifest.webmanifest",
   alternates: { canonical: "/" },

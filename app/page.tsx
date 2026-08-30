@@ -18,8 +18,9 @@ export default function Home() {
       "@type": ["AutoRental", "LocalBusiness"],
       name: "Financer Car Rental",
       url: siteUrl,
-      image: `${siteUrl}/images/jaipur-road-self-drive-hero.jpg`,
+      image: `${siteUrl}/images/jaipur-road-self-drive-hero.webp`,
       telephone: businessDetails.phoneHref,
+
       email: businessDetails.email,
       priceRange: "₹₹",
       areaServed: ["Jaipur", "Rajasthan"],
@@ -98,8 +99,9 @@ export default function Home() {
 
       <section className="section freedom-section">
         <div className="container freedom-grid">
-          <div className="freedom-image"><Image src="/images/locations/nahargarh-fort.jpg" alt="Self-drive SUV overlooking Jaipur from Nahargarh" fill sizes="(max-width: 800px) 100vw, 50vw" /><div className="freedom-stamp"><strong>YOU</strong><span>set the pace</span></div></div>
+          <div className="freedom-image"><Image src="/images/locations/nahargarh-fort.webp" alt="Self-drive SUV overlooking Jaipur from Nahargarh" fill sizes="(max-width: 800px) 100vw, 50vw" /><div className="freedom-stamp"><strong>YOU</strong><span>set the pace</span></div></div>
           <div className="freedom-copy"><span className="kicker">WHY SELF-DRIVE</span><h2>Travel without<br /><em>someone else’s clock.</em></h2><p>Leave early. Stay for sunset. Take the scenic turn. A self-drive car gives your Jaipur trip the one thing packaged travel cannot: control.</p><ul><li><ShieldIcon /><span><strong>Verified before every handover</strong><small>Documents, tyres, fluids and essential systems checked.</small></span></li><li><span className="feature-icon">₹</span><span><strong>Plans explained upfront</strong><small>Know the rental, kilometre package and deposit before confirming.</small></span></li><li><span className="feature-icon">↗</span><span><strong>Built for Rajasthan drives</strong><small>Local route guidance and human help whenever you need it.</small></span></li></ul><Link className="text-link orange" href="/about">Why Financer exists <ArrowIcon /></Link></div>
+
         </div>
       </section>
 
