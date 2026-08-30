@@ -49,7 +49,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const websiteSchema = [
     { "@context": "https://schema.org", "@type": "WebSite", "@id": `${siteUrl}/#website`, name: "Financer Car Rental Jaipur", url: siteUrl, inLanguage: "en-IN" },
-    { "@context": "https://schema.org", "@type": ["Organization", "LocalBusiness"], "@id": `${siteUrl}/#organization`, name: "Financer Car Rental", url: siteUrl, email: businessDetails.email, telephone: businessDetails.phoneHref, logo: `${siteUrl}/brand/financer-mark.svg`, sameAs: [businessDetails.instagramUrl], founder: { "@type": "Person", name: businessDetails.owner }, address: { "@type": "PostalAddress", streetAddress: "Durgapura", addressLocality: "Jaipur", addressRegion: "Rajasthan", addressCountry: "IN" }, areaServed: { "@type": "City", name: "Jaipur" }, openingHoursSpecification: [{ "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], opens: "00:00", closes: "23:59" }] },
+    { "@context": "https://schema.org", "@type": ["Organization", "LocalBusiness"], "@id": `${siteUrl}/#organization`, name: "Financer Car Rental", url: siteUrl, email: businessDetails.email, telephone: businessDetails.phoneHref, logo: `${siteUrl}/brand/financer-mark.avif`, sameAs: [businessDetails.instagramUrl], founder: { "@type": "Person", name: businessDetails.owner }, address: { "@type": "PostalAddress", streetAddress: "Durgapura", addressLocality: "Jaipur", addressRegion: "Rajasthan", addressCountry: "IN" }, areaServed: { "@type": "City", name: "Jaipur" }, openingHoursSpecification: [{ "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], opens: "00:00", closes: "23:59" }] },
+
   ];
 
   return (
