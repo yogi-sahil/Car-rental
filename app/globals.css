@@ -29,7 +29,8 @@ h2 em { color:var(--rose); font-style:normal; }
 .site-header { position:sticky; z-index:50; top:0; height:78px; border-bottom:1px solid rgba(221,218,210,.75); background:rgba(255,253,249,.91); backdrop-filter:blur(18px); }
 .nav-shell { height:78px; display:flex; align-items:center; gap:30px; }
 .brand { display:inline-flex; align-items:center; flex:0 0 auto; }
-.brand-logo-image { display:block; width:220px; height:auto; }
+.brand-logo-image { display:block; width:220px; height:auto; aspect-ratio:3/1; object-fit:contain; }
+
 .desktop-nav { display:flex; align-items:center; gap:31px; margin-left:auto; }
 .desktop-nav a { position:relative; padding:29px 0 27px; color:#48534f; font-size:13px; font-weight:700; }
 .desktop-nav a::after { content:""; position:absolute; right:0; bottom:18px; left:0; height:2px; background:var(--rose); transform:scaleX(0); transition:transform .2s; }
