@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     default: "Self Drive Car Rental in Jaipur | Financer Car Rental",
     template: "%s | Financer Car Rental Jaipur",
   },
-  description: "Book 13 verified self-drive cars in Jaipur. Every listed daily package covers 24 hours with 300 km included, flexible pickup and 24×7 support.",
+  description: "Book 14 verified self-drive cars in Jaipur. Every listed daily package covers 24 hours with 300 km included, flexible pickup and 24×7 support.",
   applicationName: "Financer Car Rental Jaipur",
   authors: [{ name: "Financer Car Rental", url: siteUrl }],
   creator: "Financer Car Rental",
@@ -39,7 +39,8 @@ export const metadata: Metadata = {
     siteName: "Financer Car Rental Jaipur",
     images: [{ url: "/images/jaipur-road-self-drive-hero.webp", width: 1763, height: 892, alt: "Self-drive SUV on a Jaipur road" }],
   },
-  twitter: { card: "summary_large_image", title: "Financer Car Rental Jaipur", description: "13 self-drive cars with 24-hour, 300-km packages in Jaipur.", images: ["/images/jaipur-road-self-drive-hero.webp"] },
+  twitter: { card: "summary_large_image", title: "Financer Car Rental Jaipur", description: "14 self-drive cars with 24-hour, 300-km packages in Jaipur.", images: ["/images/jaipur-road-self-drive-hero.webp"] },
+
 
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
   manifest: "/manifest.webmanifest",

@@ -43,7 +43,9 @@ export const cars: Car[] = [
   { ...sharedPlan, slug: "maruti-fronx", name: "Maruti Fronx", category: "Priority crossover", image: "/images/cars/maruti-fronx.webp", price: 2849, seats: 5, transmission: "Manual", fuel: "Petrol", luggage: 2, mileage: "Up to 21 km/l", summary: "A stylish, efficient crossover that balances city agility with weekend-road comfort.", bestFor: ["Couples", "Jaipur city drives", "Weekend escapes"], features: ["Crossover comfort", ...sharedFeatures] },
   { ...sharedPlan, slug: "maruti-brezza", name: "Maruti Brezza", category: "Priority compact SUV", image: "/images/cars/maruti-brezza.webp", price: 2799, seats: 5, transmission: "Manual", fuel: "Petrol", luggage: 3, mileage: "Up to 19 km/l", summary: "A practical compact SUV with comfortable space for Jaipur and nearby road trips.", bestFor: ["Small families", "City and highway mix", "Ajmer–Pushkar drives"], features: ["Useful ground clearance", ...sharedFeatures] },
   { ...sharedPlan, slug: "toyota-fortuner", name: "Toyota Fortuner", category: "Flagship premium SUV", image: "/images/cars/toyota-fortuner.webp", price: 9999, seats: 7, transmission: "Automatic", fuel: "Diesel", luggage: 4, mileage: "Up to 14 km/l", summary: "A flagship seven-seat SUV for premium group travel and long Rajasthan journeys.", bestFor: ["Premium family travel", "Executive road trips", "Long-distance comfort"], features: ["Premium road presence", ...sharedFeatures] },
+  { ...sharedPlan, slug: "land-rover-defender", name: "Land Rover Defender", category: "Ultra luxury flagship SUV", image: "/images/cars/land-rover-defender.webp", price: 81000, seats: 5, transmission: "Automatic", fuel: "Petrol", luggage: 4, mileage: "Up to 10 km/l", summary: "The ultimate luxury off-road icon. Unmatched road presence, royal comfort and commanding performance for elite Jaipur occasions.", bestFor: ["VIP & Celebrity movements", "Royal wedding entries", "Luxury Rajasthan tours"], features: ["Flagship luxury presence", "Air suspension", "Terrain Response 4x4", ...sharedFeatures] },
   { ...sharedPlan, slug: "hyundai-verna", name: "Hyundai Verna", category: "Premium sedan", image: "/images/cars/hyundai-verna.webp", price: 3499, seats: 5, transmission: "Automatic", fuel: "Petrol", luggage: 3, mileage: "Up to 18 km/l", summary: "A sleek premium sedan for comfortable city travel and smooth highway touring.", bestFor: ["Business travel", "Couples", "Comfortable highway drives"], features: ["Premium sedan comfort", ...sharedFeatures] },
+
   { ...sharedPlan, slug: "hyundai-creta", name: "Hyundai Creta", category: "Premium compact SUV", image: "/images/cars/hyundai-creta.webp", price: 3499, seats: 5, transmission: "Automatic", fuel: "Petrol", luggage: 3, mileage: "Up to 17 km/l", summary: "A refined automatic SUV for comfortable Jaipur drives and confident Rajasthan highways.", bestFor: ["Small families", "Jaipur–Udaipur drives", "Premium city travel"], features: ["Automatic climate control", ...sharedFeatures] },
   { ...sharedPlan, slug: "maruti-brezza-cng", name: "Maruti Brezza CNG", category: "Efficient CNG SUV", image: "/images/cars/maruti-brezza-cng.webp", price: 3249, seats: 5, transmission: "Manual", fuel: "CNG", luggage: 2, mileage: "Up to 25 km/kg", summary: "An economical compact SUV for longer local use with CNG efficiency and SUV comfort.", bestFor: ["Economical city travel", "Small families", "Long local bookings"], features: ["Factory CNG efficiency", ...sharedFeatures] },
   { ...sharedPlan, slug: "maruti-swift-cng", name: "Maruti Swift CNG", category: "Efficient CNG hatchback", image: "/images/cars/maruti-swift-cng.webp", price: 2999, seats: 5, transmission: "Manual", fuel: "CNG", luggage: 1, mileage: "Up to 30 km/kg", summary: "A city-friendly hatchback with lower running costs for practical Jaipur bookings.", bestFor: ["City commuters", "Budget-conscious renters", "Local Jaipur plans"], features: ["Factory CNG efficiency", ...sharedFeatures] },
@@ -300,12 +302,14 @@ export const weddingCombos: WeddingCombo[] = [
     summary: "An imposing, coordinated SUV lineup engineered for high-profile guests, artists, and VIP family movement across Jaipur.",
     recommendedFor: "Celebrities, Corporate Delegations, VIP Guest Relatives",
     fleetComposition: [
-      "3x Toyota Fortuner (Flagship SUVs)",
-      "4x Mahindra Scorpio N (Executive Stance)",
+      "1x Land Rover Defender (Head Flagship SUV)",
+      "2x Toyota Fortuner (Executive Escort)",
+      "4x Mahindra Scorpio N (High Stance Entourage)",
     ],
     totalVehicles: "7 Vehicles",
-    seatingCapacity: "45+ Guests",
-    highlights: ["Uniform high-stance SUVs", "24×7 backup vehicle on standby", "Airport to Palace direct transit", "Full sanitized interiors"],
+    seatingCapacity: "42+ Guests",
+    highlights: ["Defender flagship lead", "Uniform high-stance SUVs", "24×7 backup vehicle on standby", "Airport to Palace direct transit"],
+
   },
   {
     id: "palace-guest-family-shuttle",

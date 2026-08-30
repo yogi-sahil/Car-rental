@@ -42,7 +42,7 @@ export default function Home() {
       <section className="home-hero">
         <div className="container home-hero-grid">
           <div className="hero-copy">
-            <div className="hero-overline"><span>JAIPUR’S SELF-DRIVE CLUB</span><span className="hero-rating">13 cars · 300 km plans</span></div>
+            <div className="hero-overline"><span>JAIPUR’S SELF-DRIVE CLUB</span><span className="hero-rating">14 cars · 300 km plans</span></div>
             <h1>Your Rajasthan.<br /><em>Your keys.</em></h1>
             <p>Verified cars, transparent plans and the freedom to stop wherever the road feels right.</p>
             <div className="hero-actions"><Link className="button button-primary" href="/booking">Find a car <ArrowIcon /></Link><Link className="text-link" href="/locations">Explore road trips <ArrowIcon /></Link></div>
@@ -53,7 +53,8 @@ export default function Home() {
         <div className="container home-search"><BookingForm /></div>
       </section>
 
-      <section className="trust-bar"><div className="container trust-bar-grid"><div><strong>13</strong><span>self-drive cars</span></div><div><strong>6</strong><span>Jaipur pickup locations</span></div><div><strong>24×7</strong><span>roadside support</span></div><div><strong>300</strong><span>km included per plan</span></div></div></section>
+      <section className="trust-bar"><div className="container trust-bar-grid"><div><strong>14</strong><span>self-drive cars</span></div><div><strong>6</strong><span>Jaipur pickup locations</span></div><div><strong>24×7</strong><span>roadside support</span></div><div><strong>300</strong><span>km included per plan</span></div></div></section>
+
 
       <section className="category-section container" aria-labelledby="category-title">
         <div className="category-intro"><span className="kicker">BUDGET BY BODY STYLE</span><h2 id="category-title">Start with the shape<br />that fits your trip.</h2><p>Quick starting-price guidance before you compare individual cars.</p></div>

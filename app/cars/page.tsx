@@ -6,7 +6,7 @@ import { cars } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Self Drive Cars in Jaipur – Prices, Fleet & Filters",
-  description: "Compare and filter 13 self-drive cars in Jaipur by category, 24-hour price, seats, fuel and transmission. Every listed package includes 300 km.",
+  description: "Compare and filter 14 self-drive cars in Jaipur by category, 24-hour price, seats, fuel and transmission. Every listed package includes 300 km.",
   alternates: { canonical: "/cars" },
 };
 
@@ -14,10 +14,11 @@ export default function CarsPage() {
   return (
     <main>
       <PageHero
-        eyebrow="13 SELF-DRIVE CARS"
+        eyebrow="14 SELF-DRIVE CARS"
         title="Choose the car that fits the road."
         description="Every listed price covers 24 hours with 300 km included. Filter by SUV, Sedan, Hatchback, transmission, fuel, seats and budget."
       />
+
       <section className="section container">
         <FleetFilterGrid cars={cars} />
         <div className="content-note">

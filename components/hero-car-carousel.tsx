@@ -9,10 +9,12 @@ const heroCutouts: Record<string, string> = {
   "mahindra-scorpio-n": "/images/cars/cutouts/mahindra-scorpio-n-cutout.webp",
   "mahindra-scorpio": "/images/cars/cutouts/scorpio-classic-cutout.webp",
   "mahindra-thar": "/images/cars/cutouts/thar-cutout.webp",
+  "land-rover-defender": "/images/cars/cutouts/defender.webp",
   "maruti-swift": "/images/cars/cutouts/swift-cutout.webp",
   "maruti-fronx": "/images/cars/cutouts/fronx-cutout.webp",
   "maruti-brezza": "/images/cars/cutouts/brezza-cutout.webp",
 };
+
 
 
 export function HeroCarCarousel() {
