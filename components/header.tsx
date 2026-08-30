@@ -9,11 +9,13 @@ import { BrandLogo } from "./brand-logo";
 
 const links = [
   ["Cars", "/cars"],
+  ["Wedding & Combos", "/wedding-bulk-booking"],
   ["Pickup locations", "/pickup-locations"],
   ["Road trips", "/locations"],
   ["Self-drive Jaipur", "/self-drive-car-rental-jaipur"],
   ["About", "/about"],
 ];
+
 
 export function Header() {
   const [open, setOpen] = useState(false);

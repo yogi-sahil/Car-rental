@@ -259,6 +259,73 @@ export const faqs = [
   ["What happens if I need help during the trip?", "Financer provides a 24×7 support number for breakdown coordination, tyre or battery help, and trip assistance."],
 ] as const;
 
+export type WeddingCombo = {
+  id: string;
+  name: string;
+  eyebrow: string;
+  image: string;
+  tag: string;
+  summary: string;
+  recommendedFor: string;
+  fleetComposition: string[];
+  totalVehicles: string;
+  seatingCapacity: string;
+  highlights: string[];
+};
+
+export const weddingCombos: WeddingCombo[] = [
+  {
+    id: "royal-baraat-convoy",
+    name: "The Royal Groom & Baraat Convoy",
+    eyebrow: "ICONIC ROYAL ENTOURAGE",
+    image: "/images/wedding-baraat-convoy.webp",
+    tag: "Most Popular for Weddings",
+    summary: "A commanding multi-SUV convoy tailored for grand Baraat entries, groom escorts, and palace driveway arrivals in Jaipur.",
+    recommendedFor: "Groom Baraat, Royal Palace Entry, Family VIPs",
+    fleetComposition: [
+      "2x Toyota Fortuner (Lead & Groom Car)",
+      "3x Mahindra Scorpio N (Family Escort)",
+      "1x Mahindra Thar (Open-Air Youth Escort)",
+    ],
+    totalVehicles: "6 Vehicles",
+    seatingCapacity: "35+ Guests",
+    highlights: ["Symmetrical black/white fleet", "Ceramic polished", "Dedicated Fleet Coordinator", "On-time palace arrival"],
+  },
+  {
+    id: "grand-vip-entourage",
+    name: "Grand VIP & Celebrity Entourage",
+    eyebrow: "HIGH-STANCE ESCORT",
+    image: "/images/wedding-baraat-convoy-2.webp",
+    tag: "High Stance & Presence",
+    summary: "An imposing, coordinated SUV lineup engineered for high-profile guests, artists, and VIP family movement across Jaipur.",
+    recommendedFor: "Celebrities, Corporate Delegations, VIP Guest Relatives",
+    fleetComposition: [
+      "3x Toyota Fortuner (Flagship SUVs)",
+      "4x Mahindra Scorpio N (Executive Stance)",
+    ],
+    totalVehicles: "7 Vehicles",
+    seatingCapacity: "45+ Guests",
+    highlights: ["Uniform high-stance SUVs", "24×7 backup vehicle on standby", "Airport to Palace direct transit", "Full sanitized interiors"],
+  },
+  {
+    id: "palace-guest-family-shuttle",
+    name: "Palace Guest & Family Shuttle Fleet",
+    eyebrow: "SEAMLESS HOSPITALITY",
+    image: "/images/wedding-guest-escort.webp",
+    tag: "Maximum Comfort & Space",
+    summary: "Balanced mix of comfortable 7-seaters and agile city SUVs to transport wedding guests between airports, hotels, and event venues.",
+    recommendedFor: "Outstation Guests, Sangeet & Mehendi Transits, Multi-Venue Logistics",
+    fleetComposition: [
+      "3x Mahindra Scorpio N (7-Seater Group)",
+      "3x Maruti Brezza / Fronx (City Agility)",
+      "2x Hyundai Creta / Verna (Executive Comfort)",
+    ],
+    totalVehicles: "8 Vehicles",
+    seatingCapacity: "40+ Guests",
+    highlights: ["Spacious luggage accommodation", "Flexible multi-day packages", "Doorstep hotel/resort delivery", "Zero coordination headaches"],
+  },
+];
+
 export function getCar(slug: string) {
   return cars.find((car) => car.slug === slug);
 }
@@ -270,3 +337,4 @@ export function getDestination(slug: string) {
 export function getPickupLocation(slug: string) {
   return pickupLocations.find((location) => location.slug === slug);
 }
+
