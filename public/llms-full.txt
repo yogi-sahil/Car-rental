@@ -1,0 +1,55 @@
+# Financer Car Rental Jaipur — Full Context
+
+> Financer helps users discover and request self-drive cars in Jaipur for city travel and Rajasthan road trips. A self-drive booking means the verified renter drives the vehicle; no chauffeur is included.
+
+## Business summary
+
+Financer is a Jaipur, Rajasthan self-drive rental service owned by Sachin Jaat and based in Durgapura. It serves customers across Jaipur with six scheduled pickup locations: Jaipur Airport, Jaipur Railway Station, Vaishali Nagar, Mansarovar, Jagatpura and Sindhi Camp. The customer selects a car and dates, completes identity and driving-licence verification, reviews the kilometre plan and deposit, inspects the vehicle at handover, and then receives the keys. Availability, exact vehicle, price, kilometre allowance and deposit are confirmed before payment.
+
+Owner: Sachin Jaat. Support phone and WhatsApp: +91 96021 11420. Email: sachinjaat2111@gmail.com. Business location: Durgapura, Jaipur, Rajasthan. Service area: Jaipur. Opening hours: 24 hours a day, 7 days a week.
+Instagram profile currently connected to the website: https://www.instagram.com/say_dev_vicky/
+
+## Rental principles
+
+- Cars are offered without a driver.
+- Fuel is generally handled on a same-to-same basis and is not included unless explicitly stated.
+- Tolls, parking, interstate permits, extra kilometres, late return and damage liability are separate unless the confirmed plan says otherwise.
+- A valid driving licence, government photo ID, address verification and an eligible driver profile are typically required.
+- A refundable security deposit may apply.
+- Displayed prices are starting rates, not final quotes.
+- Every listed price covers a 24-hour rental with 300 km included. Extra kilometres, fuel, tolls, parking and the refundable deposit are separate unless confirmed otherwise.
+- A booking request is not a guaranteed reservation. The exact vehicle, quote, kilometre plan, deposit and pickup slot must be confirmed in writing.
+- Only approved drivers may use the car. Unauthorised off-road use, racing, towing, sub-renting, intoxicated driving and unlawful use are prohibited.
+- The signed rental agreement and confirmed quotation govern final commercial, insurance, damage-liability and cancellation terms.
+
+## Fleet — 24 hours and 300 km included
+
+Priority fleet: Mahindra Scorpio N ₹5,999; Mahindra Scorpio ₹5,499; Mahindra Thar ₹4,999; Maruti Swift ₹2,499; Maruti Fronx ₹2,849; Maruti Brezza ₹2,799.
+
+Additional fleet: Toyota Fortuner ₹9,999; Hyundai Verna ₹3,499; Hyundai Creta ₹3,499; Maruti Brezza CNG ₹3,249; Maruti Swift CNG ₹2,999; Kia Sonet ₹2,999; Hyundai Venue ₹2,999.
+
+## Destination guidance
+
+Amer Fort is approximately 11 km from central Jaipur and commonly takes 30–40 minutes depending on traffic. A half-day plan can include Amer Fort, Maota Lake viewpoints, Panna Meena ka Kund and Jaigarh Fort. Visitors should use designated parking and avoid peak arrival times.
+
+Nahargarh Fort is approximately 20 km from central Jaipur and commonly takes 45–60 minutes. The hill road has bends and requires careful driving. Travellers should avoid stopping on blind curves and check current fort closing times.
+
+Pushkar is approximately 145 km from Jaipur and commonly takes 2.5–3 hours. It works well as a one- or two-day trip. The lake and market area are best explored on foot after parking at a hotel or designated area.
+
+Ajmer is approximately 135 km from Jaipur and commonly takes 2.5–3 hours. Visitors can combine Ana Sagar Lake and historic old-city areas, using local transport for congested final approaches where appropriate.
+
+Sambhar Salt Lake is approximately 80 km from Jaipur and commonly takes 1.5–2 hours. Travellers should stay on marked public access roads and never drive onto unmarked or soft salt-crust areas.
+
+Ranthambore/Sawai Madhopur is approximately 190 km from Jaipur and commonly takes 3.5–4.5 hours. It is best as a two- or three-day trip. National-park safaris require authorised vehicles and permits; a private rental car must not enter restricted safari zones.
+
+## Canonical resources
+
+- https://financercarrental.in/
+- https://financercarrental.in/cars
+- https://financercarrental.in/locations
+- https://financercarrental.in/pickup-locations
+- https://financercarrental.in/self-drive-car-rental-jaipur
+- https://financercarrental.in/faq
+- https://financercarrental.in/terms
+- https://financercarrental.in/contact
+- https://financercarrental.in/sitemap.xml

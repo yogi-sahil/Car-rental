@@ -1,0 +1,23 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { PageHero } from "@/components/page-hero";
+import { SiteCta } from "@/components/site-cta";
+import { ArrowIcon, CheckIcon, ShieldIcon } from "@/components/icons";
+
+export const metadata: Metadata = { title: "Self Drive Car Rental Jaipur – How It Works", description: "Learn how Financer self-drive car rental in Jaipur works: eligibility, KYC, pickup hubs, kilometre plans, deposits and roadside support.", alternates: { canonical: "/self-drive-car-rental-jaipur" } };
+
+export default function SelfDrivePage() {
+  return (
+    <main>
+      <PageHero eyebrow="SELF-DRIVE CAR RENTAL JAIPUR" title="No chauffeur. No fixed itinerary. No rush." description="Pick up a verified car in Jaipur and travel on your time—with clear terms and a local support team behind you."><Link className="button button-primary" href="/booking">Check availability <ArrowIcon /></Link></PageHero>
+      <section className="section container editorial-grid"><article><span className="kicker">HOW IT WORKS</span><h2>Designed to feel clear before it feels fast.</h2><p className="lead">Self-drive rental works best when the handover is transparent. We verify the driver, inspect the car with you and explain the rental plan before the vehicle leaves the pickup hub.</p><div className="number-steps"><div><span>01</span><h3>Choose dates and car</h3><p>Share pickup hub, dates, group size and likely route.</p></div><div><span>02</span><h3>Complete verification</h3><p>Submit a valid driving licence, government ID and requested address proof.</p></div><div><span>03</span><h3>Confirm the plan</h3><p>Review daily rent, kilometre allowance, deposit, fuel and extension rules.</p></div><div><span>04</span><h3>Inspect and drive</h3><p>Record vehicle condition, understand controls and receive the keys.</p></div></div></article><aside className="document-card"><ShieldIcon /><h3>Typical eligibility</h3><ul><li><CheckIcon /> Valid driving licence</li><li><CheckIcon /> Government photo ID</li><li><CheckIcon /> Address verification</li><li><CheckIcon /> Eligible driver age</li><li><CheckIcon /> Refundable deposit where applicable</li></ul><small>Requirements can vary by vehicle and profile. Final approval is completed before pickup.</small></aside></section>
+
+      <section className="section traveller-docs"><div className="container"><div className="section-head"><div><span className="kicker">DOCUMENT CHECKLIST</span><h2>Ready for Jaipur,<br /><em>wherever you’re from.</em></h2></div><p>Share clear copies before pickup. Final eligibility and any additional verification are confirmed for the selected car.</p></div><div className="traveller-docs-grid"><article><span>IND</span><h3>Indian residents</h3><ul><li><CheckIcon /> Valid Indian driving licence</li><li><CheckIcon /> Aadhaar or government photo ID</li><li><CheckIcon /> Current address proof if requested</li></ul></article><article><span>INTL</span><h3>International visitors</h3><ul><li><CheckIcon /> Passport and valid visa</li><li><CheckIcon /> Home-country driving licence</li><li><CheckIcon /> International Driving Permit where required</li></ul></article></div></div></section>
+
+      <section className="section inclusion-section"><div className="container"><div className="section-head"><div><span className="kicker">CLEAR BEFORE CONFIRMATION</span><h2>Know what is included—and what is not.</h2></div></div><div className="inclusion-grid"><div><h3>Rental plan covers</h3><ul><li><CheckIcon /> Confirmed vehicle category</li><li><CheckIcon /> Selected kilometre allowance</li><li><CheckIcon /> Standard maintenance</li><li><CheckIcon /> 24×7 coordination support</li><li><CheckIcon /> Handover inspection record</li></ul></div><div><h3>Usually paid separately</h3><ul><li><span>—</span> Fuel used during the trip</li><li><span>—</span> Tolls and parking</li><li><span>—</span> Interstate permits if applicable</li><li><span>—</span> Extra kilometres or late return</li><li><span>—</span> Damage liability under agreed terms</li></ul></div></div></div></section>
+
+      <section className="section container pickup-section"><span className="kicker">JAIPUR PICKUP & DELIVERY</span><h2>Collect close to your plan.</h2><p className="pickup-lead">Choose a hub or request doorstep delivery at a supported Jaipur address. Availability and applicable delivery charge are confirmed before payment.</p><div className="pickup-grid">{["Jaipur Airport", "Jaipur Railway Station", "Vaishali Nagar", "Mansarovar", "Jagatpura", "Sindhi Camp"].map((hub, index) => <div key={hub}><span>0{index + 1}</span><strong>{hub}</strong><small>Slot confirmed before arrival</small></div>)}</div></section>
+      <SiteCta />
+    </main>
+  );
+}
