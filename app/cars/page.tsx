@@ -16,16 +16,17 @@ export default function CarsPage() {
       <PageHero
         eyebrow="14 SELF-DRIVE CARS"
         title="Choose the car that fits the road."
-        description="Every listed price covers 24 hours with 300 km included. Filter by SUV, Sedan, Hatchback, transmission, fuel, seats and budget."
+        description="Starting from ₹104/hour. Every listed car comes with transparent 24-hour packages with 300 km included. Filter by body type, transmission, fuel and budget."
       />
 
       <section className="section container">
         <FleetFilterGrid cars={cars} />
         <div className="content-note">
           <strong>Before you book</strong>
-          <p>Displayed prices cover a 24-hour rental with 300 km included. Availability, refundable security deposit, fuel and extra-kilometre charges are confirmed before payment.</p>
+          <p>Displayed rates show starting hourly pricing alongside clear 24-hour packages with 300 km included. Availability, refundable security deposit, fuel and extra-kilometre charges are confirmed before payment.</p>
         </div>
       </section>
+
       <SiteCta title="Found your car? Let’s hold the dates." />
     </main>
   );

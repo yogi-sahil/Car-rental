@@ -30,7 +30,8 @@ export function HeroCarCarousel() {
       <div className="hero-car-orbit" aria-hidden="true" />
       <div className="hero-car-slide active" key={heroCars[active].slug}>
         <Image src={heroCutouts[heroCars[active].slug] ?? heroCars[active].image} alt={`${heroCars[active].name} available from Financer Car Rental Jaipur`} fill loading={active === 0 ? "eager" : "lazy"} fetchPriority={active === 0 ? "high" : "auto"} sizes="(max-width: 900px) 92vw, 48vw" />
-        <div className="hero-car-caption"><small>{heroCars[active].category}</small><strong>{heroCars[active].name}</strong><span>₹{heroCars[active].price.toLocaleString("en-IN")} · 24 hours · 300 km</span></div>
+        <div className="hero-car-caption"><small>{heroCars[active].category}</small><strong>{heroCars[active].name}</strong><span>₹{heroCars[active].pricePerHour}/hr (₹{heroCars[active].price.toLocaleString("en-IN")} · 24 hrs · 300 km)</span></div>
+
       </div>
       <div className="hero-carousel-dots" role="tablist" aria-label="Choose a car">
         {heroCars.map((car, index) => <button className={index === active ? "active" : ""} type="button" onClick={() => setActive(index)} aria-label={`Show ${car.name}`} aria-selected={index === active} role="tab" key={car.slug} />)}

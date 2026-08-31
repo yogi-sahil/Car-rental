@@ -10,7 +10,8 @@ const pages = [
   { name: "Book a self-drive car", detail: "Booking", href: "/booking" },
   { name: "Rental terms and conditions", detail: "Eligibility, deposits, permitted use and cancellations", href: "/terms" },
   { name: "Self-drive in Jaipur", detail: "How it works", href: "/self-drive-car-rental-jaipur" },
-  ...cars.map((car) => ({ name: car.name, detail: `${car.category} · ₹${car.price.toLocaleString("en-IN")}/24 hrs · 300 km`, href: `/cars/${car.slug}` })),
+  ...cars.map((car) => ({ name: car.name, detail: `${car.category} · ₹${car.pricePerHour}/hr (₹${car.price.toLocaleString("en-IN")}/24 hrs)`, href: `/cars/${car.slug}` })),
+
   ...pickupLocations.map((location) => ({ name: location.name, detail: `Pickup · ${location.zone}`, href: `/pickup-locations/${location.slug}` })),
   ...destinations.map((destination) => ({ name: destination.name, detail: `Road trip · ${destination.distance}`, href: `/locations/${destination.slug}` })),
 ];

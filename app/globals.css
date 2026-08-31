@@ -95,7 +95,9 @@ h2 em { color:var(--rose); font-style:normal; }
 .fleet-plan { display:flex; align-items:center; justify-content:space-between; gap:12px; margin:14px 0 2px; padding:10px 12px; border:1px solid #e9c5b6; border-radius:10px; color:var(--rose-dark); background:#fff4ed; font-size:10px; }.fleet-plan strong { font:800 11px Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }.fleet-plan span { font-weight:700; }
 .fleet-price { display:flex; align-items:flex-end; justify-content:space-between; padding-top:16px; }
 .fleet-price small,.fleet-price strong { display:block; }.fleet-price small { color:#969c99; font-size:9px; }.fleet-price strong { font:800 20px Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }.fleet-price strong em { color:#959b98; font:500 9px Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+.fleet-daily-note { display:block; margin-top:2px; color:#87918d; font-size:9px; font-weight:600; }
 .fleet-price>a { display:flex; align-items:center; gap:6px; color:var(--rose); font-size:10px; font-weight:800; }.fleet-price svg { width:15px; }
+
 .fleet-actions { display:grid; grid-template-columns:1fr 1.2fr; gap:8px; padding-top:16px; }.fleet-actions a { display:grid; place-items:center; min-height:38px; border:1px solid #ddd9d1; border-radius:10px; font-size:9px; font-weight:800; }.fleet-actions a:last-child { color:white; border-color:var(--green); background:var(--green); }.fleet-actions a:hover { border-color:var(--rose); }
 .content-note { margin-top:35px; padding:22px 25px; border-left:3px solid var(--rose); background:var(--cream); }.content-note strong { font:700 14px Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }.content-note p { margin:7px 0 0; color:var(--muted); font-size:12px; line-height:1.65; }
 

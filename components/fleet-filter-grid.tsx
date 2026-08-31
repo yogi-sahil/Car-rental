@@ -176,13 +176,14 @@ export function FleetFilterGrid({ cars }: FleetFilterGridProps) {
                 onChange={(e) => setSortBy(e.target.value as SortOption)}
               >
                 <option value="featured">Featured / Recommended</option>
-                <option value="price-asc">Price: Low to High</option>
-                <option value="price-desc">Price: High to Low</option>
+                <option value="price-asc">Price (Hourly: Low to High)</option>
+                <option value="price-desc">Price (Hourly: High to Low)</option>
                 <option value="seats-desc">Seats: 7 to 4</option>
                 <option value="name-asc">Name: A to Z</option>
               </select>
             </div>
           </div>
+
         </div>
 
         {/* Category Pills Navigation */}
@@ -250,18 +251,19 @@ export function FleetFilterGrid({ cars }: FleetFilterGridProps) {
           </div>
 
           <div className="filter-select-group">
-            <label htmlFor="price-filter">Budget (24h/300km)</label>
+            <label htmlFor="price-filter">Hourly Rate</label>
             <select
               id="price-filter"
               value={priceRange}
               onChange={(e) => setPriceRange(e.target.value as PriceRangeFilter)}
             >
-              <option value="all">All Price Ranges</option>
-              <option value="under-3000">Under ₹3,000/day</option>
-              <option value="3000-5000">₹3,000 – ₹5,000/day</option>
-              <option value="above-5000">₹5,000+ (Premium/7-Seater)</option>
+              <option value="all">All Hourly Rates</option>
+              <option value="under-3000">Under ₹130/hr (City / Hatchback)</option>
+              <option value="3000-5000">₹130 – ₹250/hr (Mid & Compact SUV)</option>
+              <option value="above-5000">Above ₹250/hr (Premium & Flagship SUV)</option>
             </select>
           </div>
+
 
           {hasActiveFilters && (
             <button
@@ -331,9 +333,10 @@ export function FleetFilterGrid({ cars }: FleetFilterGridProps) {
                 className="filter-chip"
                 onClick={() => setPriceRange("all")}
               >
-                Price: {priceRange === "under-3000" ? "< ₹3,000" : priceRange === "3000-5000" ? "₹3k – ₹5k" : "> ₹5,000"} <XIcon />
+                Rate: {priceRange === "under-3000" ? "< ₹130/hr" : priceRange === "3000-5000" ? "₹130 – ₹250/hr" : "> ₹250/hr"} <XIcon />
               </button>
             )}
+
             {sortBy !== "featured" && (
               <button
                 type="button"

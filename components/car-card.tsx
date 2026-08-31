@@ -20,9 +20,14 @@ export function CarCard({ car, eager = false }: { car: Car; eager?: boolean }) {
         </div>
         <div className="fleet-plan"><strong>{car.includedHours} hours</strong><span>{car.includedKm} km included</span></div>
         <div className="fleet-price">
-          <div><small>Self-drive package</small><strong>₹{car.price.toLocaleString("en-IN")}<em>/24 hours</em></strong></div>
+          <div>
+            <small>Self-drive rate</small>
+            <strong>₹{car.pricePerHour.toLocaleString("en-IN")}<em>/hour</em></strong>
+            <span className="fleet-daily-note">₹{car.price.toLocaleString("en-IN")} / 24 hrs ({car.includedKm} km)</span>
+          </div>
           <Link href={`/cars/${car.slug}`}>View car <ArrowIcon /></Link>
         </div>
+
         <div className="fleet-actions">
           <a href={`tel:${businessDetails.phoneHref}`}>Call to book</a>
           <a href={`https://wa.me/${businessDetails.whatsappNumber}?text=${encodeURIComponent(`Hi, I want to check ${car.name} availability in Jaipur.`)}`} target="_blank" rel="noreferrer">Book on WhatsApp</a>

@@ -59,10 +59,11 @@ export default function Home() {
       <section className="category-section container" aria-labelledby="category-title">
         <div className="category-intro"><span className="kicker">BUDGET BY BODY STYLE</span><h2 id="category-title">Start with the shape<br />that fits your trip.</h2><p>Quick starting-price guidance before you compare individual cars.</p></div>
         <div className="category-cards">
-          <Link href="/cars" className="category-card"><span>01</span><div><small>Easy city drives</small><strong>Hatchback</strong></div><p>From <b>₹2,499</b> / 24 hrs</p><ArrowIcon /></Link>
-          <Link href="/cars" className="category-card"><span>02</span><div><small>Comfort + luggage</small><strong>Sedan</strong></div><p>From <b>₹3,499</b> / 24 hrs</p><ArrowIcon /></Link>
-          <Link href="/cars" className="category-card"><span>03</span><div><small>Families + highways</small><strong>SUV</strong></div><p>From <b>₹2,799</b> / 24 hrs</p><ArrowIcon /></Link>
+          <Link href="/cars" className="category-card"><span>01</span><div><small>Easy city drives</small><strong>Hatchback</strong></div><p>From <b>₹104</b>/hr (₹2,499/24h)</p><ArrowIcon /></Link>
+          <Link href="/cars" className="category-card"><span>02</span><div><small>Comfort + luggage</small><strong>Sedan</strong></div><p>From <b>₹146</b>/hr (₹3,499/24h)</p><ArrowIcon /></Link>
+          <Link href="/cars" className="category-card"><span>03</span><div><small>Families + highways</small><strong>SUV</strong></div><p>From <b>₹117</b>/hr (₹2,799/24h)</p><ArrowIcon /></Link>
         </div>
+
       </section>
 
       <section className="section container home-fleet-section">
