@@ -10,23 +10,6 @@
  * It automatically creates two neat tabs:
  * - "Car Bookings"
  * - "Wedding Inquiries"
- * 
- * SETUP INSTRUCTIONS:
- * 1. Open Google Sheets (https://sheets.new)
- * 2. Name your spreadsheet: "Financer Car Rental Leads 2026"
- * 3. Go to: Extensions > Apps Script
- * 4. Delete any code in the editor, and paste this entire code
- * 5. Click "Save" (Floppy icon)
- * 6. Click "Deploy" > "New deployment"
- * 7. Click gear icon next to "Select type" > Select "Web app"
- * 8. Configuration:
- *    - Description: "Financer Lead Webhook"
- *    - Execute as: "Me (your email)"
- *    - Who has access: "Anyone" (VERY IMPORTANT!)
- * 9. Click "Deploy" -> Authorize access
- * 10. Copy the "Web app URL" (ends with /exec)
- * 11. Add it to your project `.env.local` file:
- *     NEXT_PUBLIC_GOOGLE_SHEETS_WEB_APP_URL="YOUR_WEB_APP_URL_HERE"
  * =========================================================================
  */
 
@@ -51,6 +34,13 @@ function doPost(e) {
     return ContentService.createTextOutput(JSON.stringify({ status: "error", message: error.toString() }))
       .setMimeType(ContentService.MimeType.JSON);
   }
+}
+
+function cleanPhone(phone) {
+  if (!phone) return "";
+  var str = String(phone).trim();
+  // Prepending single quote (') forces Google Sheets to treat it as plain text instead of a formula starting with +
+  return "'" + str;
 }
 
 function handleBookingLead(ss, data) {
@@ -78,13 +68,15 @@ function handleBookingLead(ss, data) {
     headerRange.setFontColor("#C89D5C");
     headerRange.setFontWeight("bold");
     sheet.setFrozenRows(1);
+    // Set Mobile Number column (Col D) as Plain Text format
+    sheet.getRange(2, 4, 500, 1).setNumberFormat("@");
   }
 
   var row = [
     data.timestamp || new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }),
     data.bookingId || data.leadId || "",
     data.name || "",
-    data.phone || "",
+    cleanPhone(data.phone),
     data.car || "",
     data.dates || "",
     data.pickup || "",
@@ -123,13 +115,15 @@ function handleWeddingLead(ss, data) {
     headerRange.setFontColor("#F1B04E");
     headerRange.setFontWeight("bold");
     sheet.setFrozenRows(1);
+    // Set Mobile Number column (Col D) as Plain Text format
+    sheet.getRange(2, 4, 500, 1).setNumberFormat("@");
   }
 
   var row = [
     data.timestamp || new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }),
     data.consultationId || data.bookingId || "",
     data.name || "",
-    data.phone || "",
+    cleanPhone(data.phone),
     data.eventType || "",
     data.venue || "",
     data.dates || "",
