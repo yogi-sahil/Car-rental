@@ -21,3 +21,5 @@ export const ClockIcon = (p: IconProps) => <svg {...base} {...p}><circle cx="12"
 export const ChevronIcon = (p: IconProps) => <svg {...base} {...p}><path d="m9 18 6-6-6-6" /></svg>;
 export const FilterIcon = (p: IconProps) => <svg {...base} {...p}><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" /></svg>;
 export const ResetIcon = (p: IconProps) => <svg {...base} {...p}><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /><path d="M3 3v5h5" /></svg>;
+export const InstagramIcon = (p: IconProps) => <svg {...base} {...p}><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>;
+
