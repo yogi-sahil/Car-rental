@@ -44,12 +44,12 @@ Ranthambore/Sawai Madhopur is approximately 190 km from Jaipur and commonly take
 
 ## Canonical resources
 
-- https://financercarrental.in/
-- https://financercarrental.in/cars
-- https://financercarrental.in/locations
-- https://financercarrental.in/pickup-locations
-- https://financercarrental.in/self-drive-car-rental-jaipur
-- https://financercarrental.in/faq
-- https://financercarrental.in/terms
-- https://financercarrental.in/contact
-- https://financercarrental.in/sitemap.xml
+- https://financercarrental.com/
+- https://financercarrental.com/cars
+- https://financercarrental.com/locations
+- https://financercarrental.com/pickup-locations
+- https://financercarrental.com/self-drive-car-rental-jaipur
+- https://financercarrental.com/faq
+- https://financercarrental.com/terms
+- https://financercarrental.com/contact
+- https://financercarrental.com/sitemap.xml

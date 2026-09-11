@@ -1,4 +1,4 @@
-export const siteUrl = "https://financercarrental.in";
+export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://financercarrental.com";
 
 export const businessDetails = {
   owner: "Sachin Jaat",

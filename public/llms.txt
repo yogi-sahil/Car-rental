@@ -9,51 +9,51 @@ Instagram: https://www.instagram.com/say_dev_vicky/
 
 ## Core pages
 
-- [Homepage](https://financercarrental.in/): Self-drive overview, fleet, pickup search and popular Rajasthan drives.
-- [Self-drive car rental Jaipur](https://financercarrental.in/self-drive-car-rental-jaipur): How booking, KYC, handover, deposits and kilometre plans work.
-- [Cars](https://financercarrental.in/cars): Current example fleet with starting prices and specifications.
-- [Jaipur pickup locations](https://financercarrental.in/pickup-locations): Airport, railway station and neighbourhood-specific pickup guidance.
-- [Road trips from Jaipur](https://financercarrental.in/locations): Destination guides with distance, timing, route and safety notes.
-- [Booking request](https://financercarrental.in/booking): Request availability; no payment is taken on the form.
-- [Frequently asked questions](https://financercarrental.in/faq): Documents, fuel, deposits, kilometre limits, outstation travel and support.
-- [Rental terms](https://financercarrental.in/terms): Eligibility, booking confirmation, deposits, vehicle use, fuel, incidents, cancellation and privacy terms.
-- [Contact](https://financercarrental.in/contact): Jaipur support options and pickup hubs.
+- [Homepage](https://financercarrental.com/): Self-drive overview, fleet, pickup search and popular Rajasthan drives.
+- [Self-drive car rental Jaipur](https://financercarrental.com/self-drive-car-rental-jaipur): How booking, KYC, handover, deposits and kilometre plans work.
+- [Cars](https://financercarrental.com/cars): Current example fleet with starting prices and specifications.
+- [Jaipur pickup locations](https://financercarrental.com/pickup-locations): Airport, railway station and neighbourhood-specific pickup guidance.
+- [Road trips from Jaipur](https://financercarrental.com/locations): Destination guides with distance, timing, route and safety notes.
+- [Booking request](https://financercarrental.com/booking): Request availability; no payment is taken on the form.
+- [Frequently asked questions](https://financercarrental.com/faq): Documents, fuel, deposits, kilometre limits, outstation travel and support.
+- [Rental terms](https://financercarrental.com/terms): Eligibility, booking confirmation, deposits, vehicle use, fuel, incidents, cancellation and privacy terms.
+- [Contact](https://financercarrental.com/contact): Jaipur support options and pickup hubs.
 
 ## Cars — each price covers 24 hours and 300 km
 
-- [Mahindra Scorpio N](https://financercarrental.in/cars/mahindra-scorpio-n): ₹5,999.
-- [Mahindra Scorpio](https://financercarrental.in/cars/mahindra-scorpio): ₹5,499.
-- [Mahindra Thar](https://financercarrental.in/cars/mahindra-thar): ₹4,999.
-- [Maruti Swift](https://financercarrental.in/cars/maruti-swift): ₹2,499.
-- [Maruti Fronx](https://financercarrental.in/cars/maruti-fronx): ₹2,849.
-- [Maruti Brezza](https://financercarrental.in/cars/maruti-brezza): ₹2,799.
-- [Toyota Fortuner](https://financercarrental.in/cars/toyota-fortuner): ₹9,999.
-- [Hyundai Verna](https://financercarrental.in/cars/hyundai-verna): ₹3,499.
-- [Hyundai Creta](https://financercarrental.in/cars/hyundai-creta): ₹3,499.
-- [Maruti Brezza CNG](https://financercarrental.in/cars/maruti-brezza-cng): ₹3,249.
-- [Maruti Swift CNG](https://financercarrental.in/cars/maruti-swift-cng): ₹2,999.
-- [Kia Sonet](https://financercarrental.in/cars/kia-sonet): ₹2,999.
-- [Hyundai Venue](https://financercarrental.in/cars/hyundai-venue): ₹2,999.
+- [Mahindra Scorpio N](https://financercarrental.com/cars/mahindra-scorpio-n): ₹5,999.
+- [Mahindra Scorpio](https://financercarrental.com/cars/mahindra-scorpio): ₹5,499.
+- [Mahindra Thar](https://financercarrental.com/cars/mahindra-thar): ₹4,999.
+- [Maruti Swift](https://financercarrental.com/cars/maruti-swift): ₹2,499.
+- [Maruti Fronx](https://financercarrental.com/cars/maruti-fronx): ₹2,849.
+- [Maruti Brezza](https://financercarrental.com/cars/maruti-brezza): ₹2,799.
+- [Toyota Fortuner](https://financercarrental.com/cars/toyota-fortuner): ₹9,999.
+- [Hyundai Verna](https://financercarrental.com/cars/hyundai-verna): ₹3,499.
+- [Hyundai Creta](https://financercarrental.com/cars/hyundai-creta): ₹3,499.
+- [Maruti Brezza CNG](https://financercarrental.com/cars/maruti-brezza-cng): ₹3,249.
+- [Maruti Swift CNG](https://financercarrental.com/cars/maruti-swift-cng): ₹2,999.
+- [Kia Sonet](https://financercarrental.com/cars/kia-sonet): ₹2,999.
+- [Hyundai Venue](https://financercarrental.com/cars/hyundai-venue): ₹2,999.
 
 ## Jaipur and nearby drives
 
-- [Amer Fort](https://financercarrental.in/locations/amer-fort): Half-day heritage drive around 11 km from central Jaipur.
-- [Nahargarh Fort](https://financercarrental.in/locations/nahargarh-fort): Aravalli hill and sunset drive around 20 km from central Jaipur.
-- [Pushkar](https://financercarrental.in/locations/pushkar): One- or two-day lake-town drive around 145 km from Jaipur.
-- [Ajmer](https://financercarrental.in/locations/ajmer): Full-day culture and lakeside drive around 135 km from Jaipur.
-- [Sambhar Salt Lake](https://financercarrental.in/locations/sambhar-lake): Open-landscape day drive around 80 km from Jaipur.
-- [Ranthambore](https://financercarrental.in/locations/ranthambore): Two- or three-day trip around 190 km from Jaipur; private cars do not replace authorised safari vehicles in restricted park areas.
+- [Amer Fort](https://financercarrental.com/locations/amer-fort): Half-day heritage drive around 11 km from central Jaipur.
+- [Nahargarh Fort](https://financercarrental.com/locations/nahargarh-fort): Aravalli hill and sunset drive around 20 km from central Jaipur.
+- [Pushkar](https://financercarrental.com/locations/pushkar): One- or two-day lake-town drive around 145 km from Jaipur.
+- [Ajmer](https://financercarrental.com/locations/ajmer): Full-day culture and lakeside drive around 135 km from Jaipur.
+- [Sambhar Salt Lake](https://financercarrental.com/locations/sambhar-lake): Open-landscape day drive around 80 km from Jaipur.
+- [Ranthambore](https://financercarrental.com/locations/ranthambore): Two- or three-day trip around 190 km from Jaipur; private cars do not replace authorised safari vehicles in restricted park areas.
 
 ## Jaipur pickup areas
 
-- [Jaipur Airport](https://financercarrental.in/pickup-locations/jaipur-airport)
-- [Jaipur Railway Station](https://financercarrental.in/pickup-locations/jaipur-railway-station)
-- [Vaishali Nagar](https://financercarrental.in/pickup-locations/vaishali-nagar)
-- [Mansarovar](https://financercarrental.in/pickup-locations/mansarovar)
-- [Jagatpura](https://financercarrental.in/pickup-locations/jagatpura)
-- [Sindhi Camp](https://financercarrental.in/pickup-locations/sindhi-camp)
+- [Jaipur Airport](https://financercarrental.com/pickup-locations/jaipur-airport)
+- [Jaipur Railway Station](https://financercarrental.com/pickup-locations/jaipur-railway-station)
+- [Vaishali Nagar](https://financercarrental.com/pickup-locations/vaishali-nagar)
+- [Mansarovar](https://financercarrental.com/pickup-locations/mansarovar)
+- [Jagatpura](https://financercarrental.com/pickup-locations/jagatpura)
+- [Sindhi Camp](https://financercarrental.com/pickup-locations/sindhi-camp)
 
 ## Optional
 
-- [About Financer](https://financercarrental.in/about): Product philosophy and Jaipur focus.
-- [Full LLM context](https://financercarrental.in/llms-full.txt): Expanded business, fleet and destination information.
+- [About Financer](https://financercarrental.com/about): Product philosophy and Jaipur focus.
+- [Full LLM context](https://financercarrental.com/llms-full.txt): Expanded business, fleet and destination information.
