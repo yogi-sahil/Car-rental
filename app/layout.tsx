@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "flatpickr/dist/flatpickr.min.css";
 import "./globals.css";
+import Script from "next/script";
 import { Header } from "@/components/header";
 import { SiteFooter } from "@/components/site-footer";
 import { MobileActions } from "@/components/mobile-actions";
@@ -53,12 +54,56 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const websiteSchema = [
     { "@context": "https://schema.org", "@type": "WebSite", "@id": `${siteUrl}/#website`, name: "Financer Car Rental Jaipur", url: siteUrl, inLanguage: "en-IN" },
-    { "@context": "https://schema.org", "@type": ["Organization", "LocalBusiness"], "@id": `${siteUrl}/#organization`, name: "Financer Car Rental", url: siteUrl, email: businessDetails.email, telephone: businessDetails.phoneHref, logo: `${siteUrl}/brand/financer-mark.avif`, sameAs: [businessDetails.instagramUrl], founder: { "@type": "Person", name: businessDetails.owner }, address: { "@type": "PostalAddress", streetAddress: "Durgapura", addressLocality: "Jaipur", addressRegion: "Rajasthan", addressCountry: "IN" }, areaServed: { "@type": "City", name: "Jaipur" }, openingHoursSpecification: [{ "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], opens: "00:00", closes: "23:59" }] },
-
+    {
+      "@context": "https://schema.org",
+      "@type": ["Organization", "LocalBusiness"],
+      "@id": `${siteUrl}/#organization`,
+      name: "Financer Car Rental",
+      url: siteUrl,
+      email: businessDetails.email,
+      telephone: businessDetails.phoneHref,
+      logo: `${siteUrl}/brand/financer-mark.avif`,
+      sameAs: [businessDetails.instagramUrl],
+      founder: { "@type": "Person", name: businessDetails.owner },
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Durgapura",
+        addressLocality: "Jaipur",
+        addressRegion: "Rajasthan",
+        postalCode: "302018",
+        addressCountry: "IN",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 26.8517,
+        longitude: 75.7899,
+      },
+      areaServed: { "@type": "City", name: "Jaipur" },
+      openingHoursSpecification: [{
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        opens: "00:00",
+        closes: "23:59",
+      }],
+    },
   ];
 
   return (
     <html lang="en">
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-WVEDL5QY6D"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WVEDL5QY6D');
+          `}
+        </Script>
+      </head>
       <body><JsonLd data={websiteSchema} /><Header />{children}<SiteFooter /><MobileActions /></body>
     </html>
   );
