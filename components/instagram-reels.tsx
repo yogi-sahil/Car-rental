@@ -56,10 +56,10 @@ export function InstagramReels() {
               href={businessDetails.instagramUrl}
               target="_blank"
               rel="noreferrer"
-              aria-label="Visit Financer Instagram profile @say_dev_vicky"
+              aria-label={`Visit Financer Instagram profile ${businessDetails.instagramHandle}`}
             >
               <InstagramIcon />
-              <span>@say_dev_vicky</span>
+              <span>{businessDetails.instagramHandle}</span>
               <ArrowIcon />
             </a>
           </div>

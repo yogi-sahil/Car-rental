@@ -10,7 +10,8 @@ export const businessDetails = {
   serviceArea: "Jaipur, Rajasthan",
   openingHours: "Open 24 hours · 7 days a week",
   mapsUrl: "https://www.google.com/maps/search/?api=1&query=Durgapura%2C%20Jaipur%2C%20Rajasthan",
-  instagramUrl: "https://www.instagram.com/say_dev_vicky/",
+  instagramUrl: "https://www.instagram.com/financer.jpr.btp.05/",
+  instagramHandle: "@financer.jpr.btp.05",
 } as const;
 
 export type Car = {
