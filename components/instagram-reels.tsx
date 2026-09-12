@@ -69,7 +69,7 @@ export function InstagramReels() {
           {instagramReels.map((reel) => (
             <a
               key={reel.id}
-              href={`https://www.instagram.com/reel/${reel.id}/`}
+              href={businessDetails.instagramUrl}
               target="_blank"
               rel="noreferrer"
               className="instagram-reel-card"
