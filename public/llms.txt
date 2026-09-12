@@ -14,6 +14,7 @@ Instagram: https://www.instagram.com/say_dev_vicky/
 - [Cars](https://financercarrental.com/cars): Current example fleet with starting prices and specifications.
 - [Jaipur pickup locations](https://financercarrental.com/pickup-locations): Airport, railway station and neighbourhood-specific pickup guidance.
 - [Road trips from Jaipur](https://financercarrental.com/locations): Destination guides with distance, timing, route and safety notes.
+- [Jaipur travel blog & guides](https://financercarrental.com/blog): Highway routes, cost comparisons, airport handover tips and Rajasthan itineraries.
 - [Booking request](https://financercarrental.com/booking): Request availability; no payment is taken on the form.
 - [Frequently asked questions](https://financercarrental.com/faq): Documents, fuel, deposits, kilometre limits, outstation travel and support.
 - [Rental terms](https://financercarrental.com/terms): Eligibility, booking confirmation, deposits, vehicle use, fuel, incidents, cancellation and privacy terms.

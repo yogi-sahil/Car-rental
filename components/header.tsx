@@ -13,6 +13,7 @@ const links = [
   ["Pickup locations", "/pickup-locations"],
   ["Road trips", "/locations"],
   ["Self-drive Jaipur", "/self-drive-car-rental-jaipur"],
+  ["Blog", "/blog"],
   ["About", "/about"],
 ];
 
