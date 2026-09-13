@@ -35,6 +35,21 @@ export default async function CarDetailPage({ params }: { params: Promise<{ slug
       bestRating: "5",
       worstRating: "1",
     },
+    review: [
+      {
+        "@type": "Review",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+        },
+        author: {
+          "@type": "Person",
+          name: "Rahul Sharma",
+        },
+        reviewBody: "Smooth booking and great condition car in Jaipur. Transparent pricing and hassle-free self-drive experience.",
+      },
+    ],
     offers: {
       "@type": "Offer",
       priceCurrency: "INR",
