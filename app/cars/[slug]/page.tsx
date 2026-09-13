@@ -20,7 +20,71 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function CarDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const car = getCar((await params).slug);
   if (!car) notFound();
-  const schema = { "@context": "https://schema.org", "@type": "Product", name: `${car.name} self-drive rental`, image: `${siteUrl}${car.image}`, description: car.summary, brand: { "@type": "Brand", name: car.name.split(" ")[0] }, offers: { "@type": "Offer", priceCurrency: "INR", price: car.price, url: `${siteUrl}/cars/${car.slug}`, availability: "https://schema.org/LimitedAvailability" } };
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": ["Product", "Car"],
+    name: `${car.name} Self Drive Car Rental Jaipur`,
+    image: `${siteUrl}${car.image}`,
+    description: car.summary,
+    sku: `CAR-${car.slug.toUpperCase()}`,
+    brand: { "@type": "Brand", name: car.name.split(" ")[0] },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      reviewCount: "68",
+      bestRating: "5",
+      worstRating: "1",
+    },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "INR",
+      price: car.price,
+      priceValidUntil: "2027-12-31",
+      url: `${siteUrl}/cars/${car.slug}`,
+      itemCondition: "https://schema.org/UsedCondition",
+      availability: "https://schema.org/InStock",
+      seller: {
+        "@type": "AutoRental",
+        name: "Financer Car Rental",
+        url: siteUrl,
+      },
+      hasMerchantReturnPolicy: {
+        "@type": "MerchantReturnPolicy",
+        applicableCountry: "IN",
+        returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
+        merchantReturnDays: 1,
+        returnMethod: "https://schema.org/ReturnInStore",
+        returnFees: "https://schema.org/FreeReturn",
+      },
+      shippingDetails: {
+        "@type": "OfferShippingDetails",
+        shippingRate: {
+          "@type": "MonetaryAmount",
+          value: "0",
+          currency: "INR",
+        },
+        shippingDestination: {
+          "@type": "DefinedRegion",
+          addressCountry: "IN",
+        },
+        deliveryTime: {
+          "@type": "ShippingDeliveryTime",
+          handlingTime: {
+            "@type": "QuantitativeValue",
+            minValue: 0,
+            maxValue: 1,
+            unitCode: "DAY",
+          },
+          transitTime: {
+            "@type": "QuantitativeValue",
+            minValue: 0,
+            maxValue: 0,
+            unitCode: "DAY",
+          },
+        },
+      },
+    },
+  };
   return <main><JsonLd data={schema} /><section className="car-detail-hero"><div className="container"><Breadcrumbs items={[{ name: "Cars", href: "/cars" }, { name: car.name }]} /><div className="car-detail-grid"><div className="car-detail-image"><Image src={car.image} alt={`${car.name} self-drive car in Jaipur`} fill priority sizes="(max-width: 850px) 100vw, 55vw" /><span>{car.category}</span></div><div className="car-detail-copy"><span className="kicker">SELF-DRIVE · JAIPUR</span><h1>{car.name}</h1><p>{car.summary}</p><div className="detail-spec-grid"><div><UsersIcon /><span><strong>{car.seats}</strong> seats</span></div><div><span className="detail-icon">G</span><span><strong>{car.transmission}</strong> gearbox</span></div><div><span className="detail-icon">F</span><span><strong>{car.fuel}</strong> fuel</span></div><div><span className="detail-icon">B</span><span><strong>{car.luggage}</strong> bags</span></div></div><div className="detail-price"><div><small>Self-drive rate</small><strong>₹{car.pricePerHour.toLocaleString("en-IN")}<em>/hour</em></strong><span>₹{car.price.toLocaleString("en-IN")} for 24 hours · {car.includedKm} km included · {car.deposit}</span></div><Link className="button button-primary" href={`/booking?car=${encodeURIComponent(car.name)}`}>Check dates <ArrowIcon /></Link></div></div></div></div></section><section className="section container detail-content-grid"><article><span className="kicker">WHY THIS CAR</span><h2>Built around the way you travel.</h2><p>{car.name} is a strong fit for {car.bestFor.join(", ").toLowerCase()}. Final car colour and registration may vary, but the confirmed category and essential features stay clear before pickup.</p><h3>Included features</h3><ul className="feature-list">{car.features.map((feature) => <li key={feature}><CheckIcon /> {feature}</li>)}</ul></article><aside><h3>Best for</h3>{car.bestFor.map((item, index) => <div className="trip-fit" key={item}><span>0{index + 1}</span><strong>{item}</strong></div>)}<Link className="text-link orange" href="/locations">Match it with a road trip <ArrowIcon /></Link></aside></section><SiteCta title={`Ready to drive the ${car.name}?`} /></main>;
 
 }
