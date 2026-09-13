@@ -62,9 +62,11 @@ export function BookingForm() {
       </div>
       <div className="search-field pickup-search-field">
         <div className="search-field-title-row">
-          <span>
-            <MapIcon /> {pickup === "Other" ? "Custom Location" : "Pickup hub"}
-          </span>
+          <label htmlFor={pickup === "Other" ? "custom-pickup-input" : "pickup-select"}>
+            <span>
+              <MapIcon /> {pickup === "Other" ? "Custom Location" : "Pickup hub"}
+            </span>
+          </label>
           {pickup === "Other" && (
             <button
               type="button"
@@ -74,6 +76,7 @@ export function BookingForm() {
                 setCustomPickup("");
               }}
               title="Switch back to standard pickup hubs"
+              aria-label="Switch back to standard pickup hubs"
             >
               Choose Hub ↺
             </button>
@@ -82,6 +85,7 @@ export function BookingForm() {
 
         {pickup === "Other" ? (
           <input
+            id="custom-pickup-input"
             type="text"
             placeholder="e.g. C-Scheme, Raja Park, Hotel..."
             value={customPickup}
@@ -89,9 +93,16 @@ export function BookingForm() {
             autoFocus
             required
             className="search-custom-input"
+            aria-label="Enter custom pickup location"
           />
         ) : (
-          <select name="pickup" value={pickup} onChange={(e) => setPickup(e.target.value)}>
+          <select
+            id="pickup-select"
+            name="pickup"
+            value={pickup}
+            onChange={(e) => setPickup(e.target.value)}
+            aria-label="Select pickup hub location"
+          >
             <option value="Jaipur Airport">Jaipur Airport</option>
             <option value="Jaipur Railway Station">Jaipur Railway Station</option>
             <option value="Vaishali Nagar">Vaishali Nagar</option>
@@ -103,11 +114,12 @@ export function BookingForm() {
         )}
       </div>
 
-      <label className="search-field">
+      <label className="search-field" htmlFor="trip-dates-field">
         <span>
           <CalendarIcon /> Trip dates
         </span>
         <input
+          id="trip-dates-field"
           ref={dateInput}
           name="dates"
           type="hidden"
@@ -115,9 +127,9 @@ export function BookingForm() {
           aria-label="Pickup and return dates"
         />
       </label>
-      <label className="search-field">
+      <label className="search-field" htmlFor="car-preference-field">
         <span>Car preference</span>
-        <select name="carType" defaultValue="SUV">
+        <select id="car-preference-field" name="carType" defaultValue="SUV" aria-label="Select car preference">
           <option>Hatchback</option>
           <option>Sedan</option>
           <option>SUV</option>
