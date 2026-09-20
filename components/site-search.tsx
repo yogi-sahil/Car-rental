@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { cars, destinations, pickupLocations } from "@/lib/data";
+import { blogPosts } from "@/lib/blog-data";
 import { ArrowIcon, SearchIcon, XIcon } from "./icons";
 
 const pages = [
@@ -14,6 +15,7 @@ const pages = [
 
   ...pickupLocations.map((location) => ({ name: location.name, detail: `Pickup · ${location.zone}`, href: `/pickup-locations/${location.slug}` })),
   ...destinations.map((destination) => ({ name: destination.name, detail: `Road trip · ${destination.distance}`, href: `/locations/${destination.slug}` })),
+  ...blogPosts.map((post) => ({ name: post.title, detail: `Guide · ${post.category}`, href: `/blog/${post.slug}` })),
 ];
 
 export function SiteSearch({ mobile = false, onNavigate }: { mobile?: boolean; onNavigate?: () => void }) {

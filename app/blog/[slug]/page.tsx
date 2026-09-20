@@ -122,7 +122,7 @@ export default async function BlogPostPage({
             <h1>{post.title}</h1>
             <p className="article-subtitle">{post.subtitle}</p>
             <div className="article-author-card">
-              <div className="author-avatar">S</div>
+              <div className="author-avatar">{post.author.name.charAt(0)}</div>
               <div>
                 <strong>{post.author.name}</strong>
                 <small>{post.author.role}</small>
@@ -264,11 +264,11 @@ export default async function BlogPostPage({
           )}
 
           <div className="article-author-bio">
-            <div className="bio-avatar">S</div>
+            <div className="bio-avatar">{post.author.name.charAt(0)}</div>
             <div>
               <strong>Written by {post.author.name}</strong>
               <p>
-                {post.author.role}. Sachin oversees vehicle handovers, route safety coordination, and fleet readiness for Financer Car Rental across Jaipur and Rajasthan highways.
+                {post.author.role}. {post.author.name} oversees vehicle handovers, route safety coordination, and fleet readiness for Financer Car Rental across Jaipur and Rajasthan highways.
               </p>
             </div>
           </div>
