@@ -29,7 +29,13 @@ export function HeroCarCarousel() {
     <div className="hero-car-carousel" aria-label="Available self-drive cars">
       <div className="hero-car-orbit" aria-hidden="true" />
       <div className="hero-car-slide active" key={heroCars[active].slug}>
-        <Image src={heroCutouts[heroCars[active].slug] ?? heroCars[active].image} alt={`${heroCars[active].name} available from Financer Car Rental Jaipur`} fill loading={active === 0 ? "eager" : "lazy"} fetchPriority={active === 0 ? "high" : "auto"} sizes="(max-width: 900px) 92vw, 48vw" />
+        <Image
+          src={heroCutouts[heroCars[active].slug] ?? heroCars[active].image}
+          alt={`${heroCars[active].name} available from Financer Car Rental Jaipur`}
+          fill
+          priority={active === 0}
+          sizes="(max-width: 768px) 92vw, (max-width: 1200px) 46vw, 560px"
+        />
         <div className="hero-car-caption"><small>{heroCars[active].category}</small><strong>{heroCars[active].name}</strong><span>₹{heroCars[active].pricePerHour}/hr (₹{heroCars[active].price.toLocaleString("en-IN")} · 24 hrs · 300 km)</span></div>
 
       </div>
