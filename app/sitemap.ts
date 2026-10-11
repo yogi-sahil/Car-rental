@@ -3,7 +3,7 @@ import { cars, destinations, pickupLocations, siteUrl } from "@/lib/data";
 import { blogPosts } from "@/lib/blog-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date("2026-09-12");
+  const lastModified = new Date("2026-10-12");
   const staticPages = [
     "",
     "/cars",
